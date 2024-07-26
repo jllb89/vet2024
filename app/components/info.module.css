@@ -188,6 +188,7 @@
 
   .image {
     width: 80%;
+    height: auto;
   }
 
   .info {
