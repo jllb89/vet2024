@@ -1,0 +1,250 @@
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 10rem;
+  padding: 2rem;
+  z-index: 1000;
+}
+
+.box1,
+.box2,
+.box3,
+.boxx {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 100%;
+}
+
+.box1 {
+  border: 2px solid #5D2478;
+  background: radial-gradient(136.03% 136.03% at 3.63% 2%, rgba(51, 44, 59, 0.19) 0%, #14121A 50%, rgba(31, 25, 38, 0.61) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box2 {
+  border: 2px solid #ca332b;
+  background: linear-gradient(180deg, rgba(29, 20, 20, 0.07) 0%, rgba(36, 36, 36, 0.06) 100%), radial-gradient(136.03% 136.03% at 3.63% 2%, rgba(245, 80, 70, 0.06) 0%, rgba(245, 80, 70, 0.30) 50%, rgba(245, 80, 70, 0.00) 100%);
+  max-width: 415px;
+}
+
+.box3 {
+  border: 2px solid #180D7D;
+  background: linear-gradient(180deg, rgba(29, 20, 20, 0.07) 0%, rgba(36, 36, 36, 0.06) 100%), radial-gradient(136.03% 136.03% at 3.63% 2%, rgba(24, 13, 125, 0.00) 0%, rgba(24, 13, 125, 0.40) 50%, rgba(24, 13, 125, 0.00) 100%);
+  max-width: 415px;
+}
+
+.boxx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 2rem;
+  border: 2px solid var(--borders, #5D2478);
+  background: radial-gradient(136.03% 136.03% at 3.63% 2%, rgba(51, 44, 59, 0.19) 0%, #14121A 50%, rgba(31, 25, 38, 0.61) 100%);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  flex: 1 1 100%;
+  max-width: 415px;
+}
+
+.image {
+  width: 50%;
+  height: auto;
+  border-radius: 0.5rem;
+  padding-bottom: 1rem;
+  align-self: center;
+}
+
+.title1,
+.title2,
+.title3,
+.title4 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  padding-bottom: 0.5rem;
+  align-self: flex-start;
+  line-height: 110%;
+}
+
+.title1 {
+  color: #A884B9;
+}
+
+.title2 {
+  color: #F55046;
+  letter-spacing: -1px;
+}
+
+.title3 {
+  color: #4D3CE5;
+  letter-spacing: -1px;
+}
+
+.title4 {
+  color: #A884B9;
+  letter-spacing: -1px;
+}
+
+.text,
+.additionalText {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-family: "SF-Pro-Light", sans-serif;
+  line-height: 130%;
+  align-self: flex-start;
+}
+
+.additionalText {
+  font-size: 1.1rem;
+  font-family: "SF-Pro-Regular", sans-serif;
+}
+
+.ctaButton {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #000000;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "SF-Pro-Regular", sans-serif;
+  margin: 1rem 0;
+  font-size: 1rem;
+  align-self: center;
+}
+
+.ctaButton:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Media query for viewports between 1200px and 900px */
+@media (max-width: 3000px) and (min-width: 901px) {
+  .box1 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .box1 .image {
+    width: 40%;
+    margin-right: 1rem;
+  }
+
+  .box1 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 60%;
+  }
+}
+
+@media (max-width: 1030px){
+  .info {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .info {
+    padding: 2rem;
+  }
+
+  .box1 {
+    max-width: 400px;
+    align-items: center;
+  }
+
+  .box1 .ctaButton {
+    align-self: center;
+    padding-top: 1rem;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .boxx {
+    flex: 1 1 100%;
+  }
+
+  .image {
+    width: 80%;
+  }
+
+  .info {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 500px) {
+  .info {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .box1,
+  .box2,
+  .box3,
+  .boxx {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .title1,
+  .title2,
+  .title3,
+  .title4 {
+    line-height: 100%;
+  }
+
+  .ctaButton {
+    font-size: .8rem;
+  }
+}
+
+/* Notification Styles */
+.notification {
+  position: fixed;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  font-family: "SF-Pro-Regular", sans-serif;
+  z-index: 1000;
+  justify-content: center;
+}
+
+.notification span {
+  margin-right: 0.5rem;
+}
+
+.notification .close {
+  cursor: pointer;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}

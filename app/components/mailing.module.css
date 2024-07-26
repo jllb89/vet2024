@@ -1,0 +1,108 @@
+.mailing {
+    background: #0c0b0ed1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 4rem 0; 
+}
+
+.mailingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding: 4rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 5rem;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    text-align: left;
+    align-self: flex-start;
+}
+
+.text {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    font-family: "SF-Pro-Light", sans-serif;
+    text-align: left;
+    align-self: flex-start;
+    line-height: 140%;
+}
+
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    background-color: #ffffff10;
+    color: #ffffff;
+}
+
+.inputFocused {
+    color: #ffffff;
+    border: none;
+}
+
+.ctaButton {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: "SF-Pro-Regular", sans-serif;
+    font-size: 1rem;
+}
+
+.ctaButton:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+@media (max-width: 900px) {
+    .mailing {
+        padding: 1rem;
+    }
+
+    .container {
+        justify-content: center; /* Center the container on small screens */
+    }
+
+    .mailingContainer {
+        width: 90%;
+        padding: 2rem;
+        max-width: 480px;
+    }
+
+    .form {
+        flex-direction: column;
+    }
+
+    .input {
+        margin: 0 0 1rem 0;
+        max-width: 100%;
+    }
+}

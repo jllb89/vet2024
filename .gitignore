@@ -34,3 +34,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# ignore firebase config
+/app/config/firebaseConfig.js
+
+.env.local
