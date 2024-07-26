@@ -58,9 +58,9 @@ const JoinVet = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>Únete como Veterinario</h1>
         <p className={styles.summary}>
-          ¿Eres un veterinario buscando nuevas formas de conectar con dueños de mascotas y ofrecer tus conocimientos?<br /><br /> Call a Vet es una plataforma digital innovadora que permite a los veterinarios ofrecer consultas remotas desde cualquier lugar. <br />Beneficios incluyen:
+          ¿Eres un veterinario buscando nuevas formas de conectar con dueños de animales de compañía y ofrecer tus conocimientos?<br /><br /> Call a Vet es una plataforma digital innovadora que permite a los veterinarios ofrecer consultas remotas desde cualquier lugar. <br />Beneficios incluyen:
           <br /><br />- <b>Flexibilidad:</b> Ajusta tus horarios y ofrece consultas remotas para equilibrar vida personal y profesional.
-          <br />- <b>Atención de clientela:</b> Expande tus servicios y conecta con dueños de mascotas en todo el mundo.
+          <br />- <b>Atención de clientela:</b> Expande tus servicios y conecta con dueños de animales de compañía en todo el mundo.
           <br />- <b>Seguro y simple:</b> Plataforma fácil de usar y segura.
           <br />- <b>Ingresos extra:</b> Aumenta tus ganancias sin costos adicionales.
           <br />- <b>Comunidad:</b> Únete a una comunidad de profesionales apasionados.
