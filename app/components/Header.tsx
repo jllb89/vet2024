@@ -54,17 +54,18 @@ const Header: React.FC = () => {
   }, []);
 
   const handleButtonClick = () => {
-    window.location.href = 'https://wa.link/2lfoqu';
+    window.location.href = '/join-as-vet';
   };
 
   return (
     <header className={styles.header}>
       <img src="/header.svg" alt="Header SVG" className={styles.headerImage} />
       <div className={styles.texts}>
-        <h1 className={styles.title}>La plataforma inteligente para el cuidado de tu animal de compañía.</h1>
-        <h2 className={styles.subtitle}>Call a Vet es una plataforma impulsada por Inteligencia Artificial que dispone para ti atención veterinaria especializada a un mensaje de distancia.</h2>
+        <h1 className={styles.title}>Únete a la plataforma inteligente para el cuidado de tu animal de compañía.</h1>
+        <h2 className={styles.subtitle}>Call a Vet es una plataforma impulsada por Inteligencia Artificial que ofrece atención veterinaria especializada a un mensaje de distancia.<br></br><br></br>
+        Si eres un profesional de la medicina veterinaria que busca incrementar su actividad laboral, ingresos y pacientes desde el lugar que desees trabajar, esta plataforma es para ti.</h2>
       </div>
-      <button className={styles.ctaButton} onClick={handleButtonClick}>Recibe asistencia ahora</button>
+      <button className={styles.ctaButton} onClick={handleButtonClick}>¡Únete a la plataforma ahora!</button>
       <a href="/" className={styles.smallLink}>Términos y condiciones</a>
       {icons.map((icon, index) => (
         <img key={index} src={`/${icon}`} alt={`Icon ${index + 1}`} className={styles.icon} />

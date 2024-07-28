@@ -34,11 +34,13 @@
 }
 
 .subtitle {
-  font-size: 1rem;
+  font-size: 1.2em;
   margin: 0.5rem 0;
   color: #ffffff;
   font-family: "SF-Pro-Light", sans-serif;
   padding-top: .5rem;
+  letter-spacing: .5px;
+  padding-bottom: 1rem;
 }
 
 .ctaButton {
