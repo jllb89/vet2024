@@ -223,7 +223,7 @@ const JoinVet = () => {
                 checked={services.includes('Medicina Preventica')}
                 onChange={handleServiceChange}
               />
-              Medicina Preventica
+              Medicina Preventiva
               <span className={styles.checkmark}></span>
             </label>
             <label className={styles.checkboxLabel}>
