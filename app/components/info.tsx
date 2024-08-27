@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react';
 import styles from './info.module.css';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Image from 'next/image';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -41,7 +42,13 @@ const Info = () => {
   return (
     <div className={styles.info}>
       <div className={styles.box1}>
-        <img src="/s1.png" alt="Box 1" className={styles.image} />
+        <Image
+          src="/s1.png"
+          alt="Box 1"
+          width={500} // Set your desired width
+          height={300} // Set your desired height
+          className={styles.image}
+        />
         <div className={styles.content}>
           <h3 className={styles.title1}>¿Qué es Call a Vet?</h3>
           <p className={styles.text}>Call a Vet es un servicio de asistencia veterinaria impulsado por IA, disponible directamente en WhatsApp. Sin descargas innecesarias, nuestro asistente te proporciona respuestas personalizadas y contacto al momento con veterinarios expertos para consultas por videollamada.</p>
@@ -50,14 +57,26 @@ const Info = () => {
         </div>
       </div>
       <div className={styles.box2}>
-        <img src="/s2.png" alt="Box 2" className={styles.image} />
+        <Image
+          src="/s2.png"
+          alt="Box 2"
+          width={300} // Set your desired width
+          height={300} // Set your desired height
+          className={styles.image}
+        />
         <h3 className={styles.title2}>Dispón de nuestra red de expertos</h3>
         <p className={styles.text}>Accede a un soporte veterinario experto enviando solo un mensaje. Call a Vet te conecta con un amplio espectro de especialidades veterinarias, incluyendo diagnóstico, medicina preventiva, cuidado dental, entre otros.</p>
         <p className={styles.additionalText}>¿Requieres asistencia veterinaria inmediata?</p>
         <a href="https://wa.link/2lfoqu" target="_blank" rel="noopener noreferrer" className={styles.ctaButton}>Recibe orientación de expertos</a>
       </div>
       <div className={styles.box3}>
-        <img src="/s3.png" alt="Box 3" className={styles.image} />
+        <Image
+          src="/s3.png"
+          alt="Box 3"
+          width={300} // Set your desired width
+          height={300} // Set your desired height
+          className={styles.image}
+        />
         <h3 className={styles.title3}>Encuentra lo mejor para tu animal de compañía en nuestra tienda</h3>
         <p className={styles.text}>Explora nuestra tienda y elige entre una variedad de productos y servicios diseñados para apoyar la salud de tu animal de compañía.</p>
         <p className={styles.additionalText}>Calidad y cuidado a tu alcance.</p>
@@ -86,7 +105,6 @@ const Info = () => {
       {showNotification && (
         <div className={styles.notification}>
           <span>Próximamente</span>
-
         </div>
       )}
     </div>
