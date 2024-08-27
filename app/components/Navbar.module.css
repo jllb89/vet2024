@@ -5,6 +5,7 @@
   padding: 1rem;
   background-color: none;
   border-bottom: none;
+  z-index: 10000;
 }
 
 .logoContainer {

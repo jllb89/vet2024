@@ -8,7 +8,10 @@ export const metadata: Metadata = {
   title: 'Call a Vet - Únete a nuestra plataforma',
   description: 'Plataforma para unirse como veterinario, centro de atención o proveedor en Call a Vet.',
   keywords: 'veterinario, centro de atención, proveedor, unirse, Call a Vet',
-  viewport: 'width=device-width, initial-scale=1',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+  },
   openGraph: {
     type: 'website',
     locale: 'es_ES',
@@ -29,6 +32,7 @@ export const metadata: Metadata = {
   },
 };
 
+
 export default function RootLayout({
   children,
 }: {
@@ -36,6 +40,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <meta name="theme-color" content="#14101A" />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   );

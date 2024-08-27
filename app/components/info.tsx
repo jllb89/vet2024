@@ -2,9 +2,34 @@
 
 import React, { useState, useEffect } from 'react';
 import styles from './info.module.css';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Info = () => {
   const [showNotification, setShowNotification] = useState(false);
+
+  useEffect(() => {
+    const boxes = document.querySelectorAll(`.${styles.box1}, .${styles.box2}, .${styles.box3}, .${styles.boxx}`);
+
+    boxes.forEach((box, index) => {
+      gsap.fromTo(box, 
+        { y: 100, opacity: 0 },
+        {
+          y: 0,
+          opacity: 1,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: box,
+            start: "top 90%", // Adjust this value to start the effect earlier or later
+            end: "bottom top",
+            scrub: true,
+          }
+        }
+      );
+    });
+  }, []);
 
   const handleButtonClick = () => {
     setShowNotification(true);

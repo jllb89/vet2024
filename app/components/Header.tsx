@@ -3,6 +3,9 @@
 import React, { useEffect } from 'react';
 import styles from './Header.module.css';
 import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const icons = [
   'p1.png', 'p2.png', 'p3.png', 'p4.png', 'p5.png', 'p6.png', 'p7.png', 'p8.png'
@@ -51,6 +54,39 @@ const Header: React.FC = () => {
 
       moveIcon();
     });
+
+    // Parallax effect for title, subtitle, and button
+    
+    gsap.to(`.${styles.title}`, {
+      yPercent: -60,
+      scrollTrigger: {
+        trigger: `.${styles.header}`,
+        start: 'top 10%', // Start the effect earlier
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+    
+    gsap.to(`.${styles.subtitle}`, {
+      yPercent: -70,
+      scrollTrigger: {
+        trigger: `.${styles.header}`,
+        start: 'top 10%', // Start the effect earlier
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+    
+    gsap.to(`.${styles.ctaButton}`, {
+      yPercent: -100,
+      scrollTrigger: {
+        trigger: `.${styles.header}`,
+        start: 'top 0%', // Start the effect earlier
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+    
   }, []);
 
   const handleButtonClick = () => {
